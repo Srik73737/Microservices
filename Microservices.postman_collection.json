@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "528d0170-db29-41fa-8a63-98b375f74baa",
+		"name": "Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Bus Refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/actuator/bus-refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"actuator",
+						"bus-refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currency-caluculation-service/currncy/caluculation-feign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromCurrency\" : \"USD\",\n\t\"toCurrency\" : \"INR\",\n\t\"amount\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8400/currency-caluculation-service/currncy/caluculation-feign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8400",
+					"path": [
+						"currency-caluculation-service",
+						"currncy",
+						"caluculation-feign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "limits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/limits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"limits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/currency/exchangerates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromCurrency\" : \"USD\",\n\t\"toCurrency\" : \"INR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8100/currency/exchangerates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"currency",
+						"exchangerates"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
