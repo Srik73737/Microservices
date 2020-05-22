@@ -1,0 +1,1 @@
+insert into CurrencyExchangeDetailsResponse values(1,75,'USD','INR')
