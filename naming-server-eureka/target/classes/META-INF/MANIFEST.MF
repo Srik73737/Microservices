@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: naming-server-eureka
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: srik1
+Implementation-Vendor-Id: com.srik
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/naming-server-eureka
+Created-By: Maven Integration for Eclipse
+
