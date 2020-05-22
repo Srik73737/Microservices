@@ -19,6 +19,11 @@ Installing Rabbit Mq:
    
        https://zipkin.io/pages/quickstart
        
+      comand to integrate Rabbit mq with zipkin server windows: 
+      
+      C:\>SET RABBIT_URI=amqp://localhost  
+     C:\> java -jar zipkin-server-2.12.9-exec.jar  
+       
   -----------------------------------------------------------
   
   Creating locl repo :
